@@ -1,21 +1,15 @@
-<?php include_once './includes/header.php' ?>
+<?php 
+    $var = './includes/';
+    include_once $var."header.php" ?>
 
     <main class="container">
-    
-        <section class="container flex-container">
-            <article class="card">
-                <div class="card-image">
-                    <img src="images/luis.jpeg" alt="luis">
-                </div>
 
-                <div class="card-content">
-                    <h4>Titulo</h4>
-                    <h5>Intro</h5>
-                    <p>Resumo</p>
-                </div>
-            </article>
-        </section>
-        
+        <?php 
+            if(isset($_GET['page']) && !($_GET['page'] == 'home')) {
+                require('pages/' . $_GET['page'] . '.php');
+            }
+        ?>
+
     </main>
 
-<?php include_once './includes/footer.php' ?>
+<?php include_once $var."footer.php" ?>
