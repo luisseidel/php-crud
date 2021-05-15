@@ -13,7 +13,7 @@ $menuItems = [
     ],
     [
         'page' => 'crud',
-        'icon' => 'fas fa-briefcase',
+        'icon' => 'fas fa-pen',
         'item' => 'Crud',
     ]
 ];
