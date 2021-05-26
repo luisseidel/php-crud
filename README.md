@@ -1,4 +1,4 @@
-<h1 align="center"> Loja Magento 2.4.2 </h1>
+<h1 align="center"> Porfólio PHP </h1>
 
 ![FOTO 1](img/logo.png)
 
@@ -8,7 +8,7 @@ Repositório que contém os meus principais projetos desenvolvidos em PHP.
 
 <p align="center">
   <a href="#hammer_and_wrench-ferramentas">Ferramentas</a> &#xa0; | &#xa0; 
-  <a href="#checkered_flag-instalação">Rodando o projeto</a> &#xa0; | &#xa0; 
+  <a href="#checkered_flag-instalação">Rodando o projeto</a>
 </p>
 
 <br>
