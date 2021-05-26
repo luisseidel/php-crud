@@ -1,6 +1,6 @@
 <h1 align="center"> Porfólio PHP </h1>
 
-![FOTO 1](img/logo.png)
+![FOTO 1](app/img/logo.png)
 
 <hr>
 Repositório que contém os meus principais projetos desenvolvidos em PHP.
