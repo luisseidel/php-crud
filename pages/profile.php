@@ -17,7 +17,11 @@
 
             $user_token = '';
 
-            $authorization = "Authorization: Bearer $user_token";
+            if ($user_token) {
+                $authorization = "Authorization: Bearer $user_token";
+            } else {
+                $authorization = "";
+            }
 
             $curl = curl_init();
             curl_setopt_array(
@@ -39,6 +43,11 @@
         if (isset($_GET['username'])):
             $user = getGitUserData($_GET['username']);
             $userArr = json_decode($user, true);
+
+            if (str_contains($userArr['created_at'], "T")):
+                $dataRaw = substr($userArr['created_at'], 0, strpos($userArr['created_at'], "T"));
+                $date = DateTime::createFromFormat('Y-m-d', $dataRaw);
+            endif;
 
             if (!isset($userArr['message'])):
     ?>
@@ -76,7 +85,7 @@
 
             <div class="user-item dflex fd-row jc-fstart al-cen">
                 <p>Membro desde:</p>
-                <p><?=$userArr['created_at']?></p>
+                <p><?= $date->format("d-m-Y") ?></p>
             </div>
             
         </div>
