@@ -1,6 +1,7 @@
 <?php 
     $var = './includes/';
-    include_once $var."header.php" ?>
+    include_once $var."header.php";
+    include_once ($var."dbConnection.php"); ?>
 
     <main class="container">
 

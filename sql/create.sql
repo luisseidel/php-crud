@@ -1,0 +1,11 @@
+CREATE DATABASE phpoo;
+
+CREATE TABLE paises (
+    id PRIMARY KEY NOT NULL AUTOINCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    sigla VARCHAR(3) NOT NULL
+);
+
+INSERT INTO paises VALUES ("Brasil", "BRA");
+INSERT INTO paises VALUES ("Espanha", "ESP");
+INSERT INTO paises VALUES ("Argentina", "ARG");

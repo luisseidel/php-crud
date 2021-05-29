@@ -9,12 +9,17 @@ $menuItems = [
     [
         'page' => 'profile',
         'icon' => 'far fa-id-card',
-        'item' => 'Profile',
+        'item' => 'Git User Profile',
     ],
     [
         'page' => 'crud',
         'icon' => 'fas fa-pen',
         'item' => 'Crud',
+    ],
+    [
+        'page' => 'about',
+        'icon' => 'fas fa-user',
+        'item' => 'About Me'
     ]
 ];
 
