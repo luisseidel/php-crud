@@ -66,6 +66,8 @@
                     <th>Id</th>
                     <th>Nome</th>
                     <th>Sigla</th>
+                    <th>Criado em</th>
+                    <th>Atualizado em</th>
                     <th>Ações</th>
                 </tr>
             </thead>
@@ -79,6 +81,8 @@
                     <td><?=$row['id']?></td>
                     <td><?=$row['nome']?></td>
                     <td><?=$row['sigla']?></td>
+                    <td><?=$row['created_at']?></td>
+                    <td><?=$row['updated_at']?></td>
                     <td>
                         <button>Editar</button>
                         <button>Excluir</button>
