@@ -12,9 +12,9 @@ $menuItems = [
         'item' => 'Git User Profile',
     ],
     [
-        'page' => 'crud',
+        'page' => 'paises/list',
         'icon' => 'fas fa-pen',
-        'item' => 'Crud',
+        'item' => 'Paises',
     ],
     [
         'page' => 'about',

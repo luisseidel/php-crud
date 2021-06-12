@@ -1,0 +1,96 @@
+
+.mobile-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-menu button {
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    min-width: 0;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1d1d1d;
+    overflow-x: hidden;
+    transition: ease-in-out 0.5s;
+}
+
+.sidenav-container {
+    padding: 20px;
+    width: 250px;
+}
+
+.sidenav button {
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    min-width: 0;
+}
+
+.sidenav li {
+    margin: 10px;
+}
+
+.sidenav li a p {
+    margin-left: 10px;
+}
+
+.close-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.social-icons {
+    display: flex;
+    width: 100%;
+}
+
+.social-icons div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+
+.social-icons div a {
+    color: white;
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.github {
+    background-color: #24292e;
+}
+
+.instagram {
+    background-color: #E1306C;
+}
+
+.gmail {
+    background-color: #BB001B;
+}
+
+.linkedin {
+    background-color: #0e76a8;
+}

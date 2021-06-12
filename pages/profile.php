@@ -1,4 +1,4 @@
-<div class="v-center jc-se vh-100">
+<div class="v-center jc-se">
 
     <section class="form-container">
         <form action="pages/gituser.php" method="get">

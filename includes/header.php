@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="<?=$var?>css/glider.css">
     <link rel="stylesheet" href="<?=$var?>css/reset.css">
+    <link rel="stylesheet" href="<?=$var?>css/menu.css">
+    <link rel="stylesheet" href="<?=$var?>css/scrollbar.css">
     <link rel="stylesheet" href="<?=$var?>css/style.css">
     <title>Portfólio</title>
 </head>
