@@ -12,7 +12,7 @@
     if (isset($_GET['send']) && isset($_GET['username'])) {
         $params = "&username=" . $_GET['username'] . "&send=" . $_GET['send'];
         
-        $url .= "/php-crud/?page=profile$params";
+        $url .= "/php-portfolio/?page=profile$params";
         header("Location: $url");
     }
 ?>

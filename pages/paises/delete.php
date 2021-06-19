@@ -1,12 +1,5 @@
 <?php
 
-if (isset($_POST['delete']) && isset($_POST["id"])) {
-    //deletePais($_POST["id"]);
-
-    print_r("Entrou 3");
-    exit();
-}
-
 function deletePais($id) {
     $sql = "DELETE FROM paises WHERE id = :id";
     $stmt = getConnection()->prepare($sql);
@@ -19,4 +12,15 @@ function deletePais($id) {
         exit;
     }
 }
+
+if (isset($_GET["id"])):
+    deletePais($_GET["id"]);
+?>
+
+<script>
+    window.location.assign("?page=paises/list");
+</script>
+
+<?php
+endif;
 ?>

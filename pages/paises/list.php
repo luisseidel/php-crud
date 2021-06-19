@@ -1,10 +1,8 @@
 <div class="dflex fd-col al-cen">
-
     <h2 class="page-title">Países</h2>
-
     
     <div class="actions">
-        <a href="?page=paises/insert">
+        <a href="?page=paises/insert" class="inserir">
             <i class="fas fa-plus"></i>
             <span>Inserir</span>
         </a>
@@ -39,17 +37,18 @@
                     <td><?=$row['created_at']?></td>
                     <td><?=$row['updated_at']?></td>
                     <td>
-                    <form action="delete.php" class="actions-btns" method="post">
-                        <input type="hidden" name="id" value="<?=$row['id']?>">
-                        <button type="submit" value="edit" class="editar">
+                    <div class="actions">
+                        <?php $params = "&id=" . $row['id']; ?>
+                        <a href="?page=paises/insert<?=$params?>" class="editar">
                             <i class="fas fa-edit"></i>
                             <span>Editar</span>
-                        </button>
-                        <button type="submit" value="delete" class="excluir">
+                        </a>
+                        <a href="?page=paises/delete<?=$params?>" class="excluir">
                             <i class="fas fa-trash-alt"></i>
                             <span>Excluir</span>
-                        </button>
-                    </form>
+                        </a>
+                    </div>
+                        
                     </td>
                 </tr>
                 <?php endforeach;?>

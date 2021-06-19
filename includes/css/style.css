@@ -192,6 +192,57 @@ main .insert-form {
     margin: 15px 0;
 }
 
+.actions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.actions a {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;    
+    margin: 15px 0;
+}
+
+.actions a {
+    background-color: lightgray;
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    min-width: 100px;
+}
+
+.actions a:hover {
+    background-color: black !important;
+    color: lightgray !important;
+    border: 1px solid white !important;
+    transition: color ease-in-out 0.5s, background-color ease-in-out 0.5s !important;
+}
+
+.actions a.inserir {
+    background-color: darkgreen;
+    color: lightgray;
+}
+.actions a.editar {
+    background-color: royalblue;
+    color: lightgray;
+}
+.actions a.excluir {
+    background-color: crimson;
+    color: lightgray;
+}
+.actions a.listar {
+    background-color: darkkhaki;
+    color: lightgray;
+}
 @media screen and (min-width: 325px) and (max-width: 450px) {
     .container {
         padding: 5% 5%;
